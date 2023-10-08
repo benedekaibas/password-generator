@@ -12,19 +12,19 @@ def toString():
 
 #get random characters from letters
 def random_letters():
-    new = random.choice(letters) + random.choice(letters)
+    new =  random.choice(letters) + random.choice(letters) + random.choice(letters)
     return new
-#rint(random_letters())
+print(random_letters())
 
 #get random characters from lower letters
 def lower_letters():
-    new = random.choice(toString()) + random.choice(toString())
+    new = random.choice(toString()) + random.choice(toString()) + random.choice(toString())
     return new
 #print(lower_letters())
 
 #get random characters from symbols
 def random_symbols():
-    new = random.choice(symbols) + random.choice(symbols)  
+    new = random.choice(symbols) + random.choice(symbols) + random.choice(symbols) 
     return new
 #print(random_symbols())
 
