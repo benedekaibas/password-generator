@@ -9,8 +9,6 @@ def toString():
     small_letters = letters_string.lower()
     return small_letters
 #function that can multiply by random numbers
-result = random.choice(letters)
-print(result)
 
 #get random characters from letters
 def random_letters():
@@ -21,7 +19,7 @@ print(random_letters())
 
 #get random characters from lower letters
 def lower_letters():
-    new = random.choice(toString())
+    new = random.choice(toString()) + random.choice(toString())
     multiply = new
     return multiply
 print(lower_letters())
@@ -36,11 +34,15 @@ print(random_symbols())
 
 def store():
     storage = random_letters() + lower_letters() + random_symbols()
-    #while len(storage) > 10:
-        #print(storage)
     return storage
 
 print(f"the password is: {store()}")
+
+print(len(store()))
+
+
+
+
 
 
 
