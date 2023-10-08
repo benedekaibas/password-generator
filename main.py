@@ -13,32 +13,29 @@ def toString():
 #get random characters from letters
 def random_letters():
     new = random.choice(letters) + random.choice(letters)
-    multiply = new
-    return multiply
-print(random_letters())
+    return new
+#rint(random_letters())
 
 #get random characters from lower letters
 def lower_letters():
     new = random.choice(toString()) + random.choice(toString())
-    multiply = new
-    return multiply
-print(lower_letters())
+    return new
+#print(lower_letters())
+
 #get random characters from symbols
 def random_symbols():
-    new = random.choice(symbols) + random.choice(symbols)
-    multiply = new
-    return multiply
-print(random_symbols())
+    new = random.choice(symbols) + random.choice(symbols)  
+    return new
+#print(random_symbols())
 
 #store the functions 
-
 def store():
     storage = random_letters() + lower_letters() + random_symbols()
     return storage
 
 print(f"the password is: {store()}")
 
-print(len(store()))
+print(len(store())) 
 
 
 
