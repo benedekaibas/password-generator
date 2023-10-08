@@ -1,3 +1,5 @@
+import random
+
 #lists that we can get the data from 
 letters = ["A", 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 symbols = ['`','~','!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','[','}','}','|','<',',','>','.','?','/']
@@ -9,6 +11,9 @@ def toString():
 #ensure that the function toString works 
 print(toString())
 
+#def generator():
+   
+       
 
 
 
