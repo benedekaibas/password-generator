@@ -8,15 +8,23 @@ def toString():
     letters_string = str(letters)
     small_letters = letters_string.lower()
     return small_letters
+#function that can multiply by random numbers
+result = random.choice(letters)
+print(result)
 
 #get random characters from letters
 def random_letters():
     new = random.choice(letters)
-    multiply = new * 8
+    multiply = new
     return multiply
 print(random_letters())
 
-
+#get random characters from symbols
+def random_symbols():
+    new = random.choice(symbols)
+    multiply = new
+    return multiply
+print(random_symbols())
 
 
 
