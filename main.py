@@ -14,19 +14,33 @@ print(result)
 
 #get random characters from letters
 def random_letters():
-    new = random.choice(letters)
+    new = random.choice(letters) + random.choice(letters)
     multiply = new
     return multiply
 print(random_letters())
 
+#get random characters from lower letters
+def lower_letters():
+    new = random.choice(toString())
+    multiply = new
+    return multiply
+print(lower_letters())
 #get random characters from symbols
 def random_symbols():
-    new = random.choice(symbols)
+    new = random.choice(symbols) + random.choice(symbols)
     multiply = new
     return multiply
 print(random_symbols())
 
+#store the functions 
 
+def store():
+    storage = random_letters() + lower_letters() + random_symbols()
+    #while len(storage) > 10:
+        #print(storage)
+    return storage
+
+print(f"the password is: {store()}")
 
 
 
